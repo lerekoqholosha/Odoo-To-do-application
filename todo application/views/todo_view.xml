@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+  <record id="view_form_todo_task" model="ir.ui.view">
+    <field name="name">To-do Task Form</field>
+    <field name="model">todo.task</field>
+    <field name="arch" type="xml">
+      <form string="To-do Task">
+      <header>
+        <button name="do_toggle_done" type="object"
+          string="Toggle Done" class="oe_highlight" />
+        <button name="do_clear_done" type="object"
+          string="Clear All Done" />
+      </header>
+        <group>
+          <field name="name"/>
+          <field name="is_done"/>
+          <field name="active" readonly="1"/>
+        </group>
+      </form>
+    </field>
+  </record>
+</odoo>
