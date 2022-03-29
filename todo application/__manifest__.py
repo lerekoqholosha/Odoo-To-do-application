@@ -9,5 +9,6 @@
     'data':['views/todo_menu.xml',
             'views/todo_view.xml',
             'security/ir.model.access.csv'],
+    'images': ['static/description/n.jpg'],
     'application':True,
 }
